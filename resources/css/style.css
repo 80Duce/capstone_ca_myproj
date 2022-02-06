@@ -35,7 +35,7 @@ header {
 
 .leftSide li span{
     font-weight: 700;
-    color: initial;
+    color: blue;
 }
 
 .rightSide {
@@ -48,7 +48,7 @@ header {
 
 .rightSide a {
     text-decoration: none;
-    color: inherit;
+    color: initial;
 }
 
 .leftSide {
@@ -61,3 +61,21 @@ header {
 .mobileNav {
     display: none;
 }
+/* For mobile */
+
+@media (max-width:768px) {
+  .mobileNav {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid black;
+      width: 100%;
+      height: 64px;
+  }
+  .rightSide,
+  .leftSide {
+      display: none;
+  }
+}
+
