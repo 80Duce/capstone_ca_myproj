@@ -78,4 +78,37 @@ header {
       display: none;
   }
 }
-
+/*Banner*/
+.learn-container {
+    display: flex;
+    margin: 0 auto;
+    background-color: lightslategray;
+}
+.banner {
+    width: 60px;
+    margin: 32px 24px;
+    flex-flow: wrap row;
+}
+.banner img {
+    width:100%
+}
+.learn-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 260px;
+}
+.learn-right input {
+    max-width: 230px;
+    padding: 8px 0px;
+    border: none;
+    background-color: lightgray;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+}
+.learn-right h1 {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 30px;
+}
