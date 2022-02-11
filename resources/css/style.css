@@ -79,36 +79,84 @@ header {
   }
 }
 /*Banner*/
+
 .learn-container {
     display: flex;
     margin: 0 auto;
-    background-color: lightslategray;
+    background-color: lightgrey;
 }
+
 .banner {
-    width: 60px;
+    width: 60%;
     margin: 32px 24px;
     flex-flow: wrap row;
 }
+
 .banner img {
-    width:100%
+    width: 100%;
 }
+
 .learn-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 260px;
 }
+
 .learn-right input {
     max-width: 230px;
-    padding: 8px 0px;
+    padding: 8px 0;
     border: none;
-    background-color: lightgray;
+    background-color: #383838;
     color: #fff;
     cursor: pointer;
     font-size: 25px;
 }
+
 .learn-right h1 {
     margin-bottom: 0;
     font-weight: 700;
     font-size: 30px;
 }
+
+/* Banner for mobile */
+
+@media (max-width: 768px) {
+    .mobile-learn-container {
+        flex-direction: auto;
+        width: 100%;
+    }
+    .mobile-banner {
+        width: 100%;
+        margin: 0;
+    }
+    .mobile-learn-right {
+
+        margin: auto;
+        max-width: 87%;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .mobile-learn-right h1 {
+        font-weight: 700;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 40px;
+        margin: 0;
+    }
+    .mobile-learn-right p {
+        font-size: 25px;
+        margin: 0;
+        padding-bottom: 24px;
+    }
+    .mobile-learn-right input {
+        margin-bottom: 32px;
+        max-width: 100%;
+        font-size: 25px;
+        background-color: #8b8484;
+    }
+}
+/*information*/
+.information {
+
+}
+
