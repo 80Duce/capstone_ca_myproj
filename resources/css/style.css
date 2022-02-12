@@ -35,7 +35,7 @@ header {
 
 .leftSide li span{
     font-weight: 700;
-    color: blue;
+    color: initial;
 }
 
 .rightSide {
@@ -48,7 +48,7 @@ header {
 
 .rightSide a {
     text-decoration: none;
-    color: initial;
+    color: inherit;
 }
 
 .leftSide {
@@ -61,29 +61,33 @@ header {
 .mobileNav {
     display: none;
 }
+
+
 /* For mobile */
 
 @media (max-width:768px) {
-  .mobileNav {
-      display: flex;
-      list-style-type: none;
-      justify-content: space-around;
-      align-items: center;
-      border: 1px solid black;
-      width: 100%;
-      height: 64px;
-  }
-  .rightSide,
-  .leftSide {
-      display: none;
-  }
+    .mobileNav {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid black;
+        width: 100%;
+        height: 64px;
+    }
+    .rightSide,
+    .leftSide {
+        display: none;
+    }
 }
-/*Banner*/
+
+
+/* Banner */
 
 .learn-container {
     display: flex;
     margin: 0 auto;
-    background-color: lightgrey;
+    background-color: #c4baba;
 }
 
 .banner {
@@ -119,11 +123,13 @@ header {
     font-size: 30px;
 }
 
+
+
 /* Banner for mobile */
 
 @media (max-width: 768px) {
     .mobile-learn-container {
-        flex-direction: auto;
+        flex-direction: column;
         width: 100%;
     }
     .mobile-banner {
@@ -131,7 +137,6 @@ header {
         margin: 0;
     }
     .mobile-learn-right {
-
         margin: auto;
         max-width: 87%;
         font-family: 'Ubuntu', sans-serif;
@@ -155,11 +160,15 @@ header {
         background-color: #8b8484;
     }
 }
-/*information*/
+
+
+/* Information */
+
 .information {
     display: inline-flex;
 }
-guest{
+
+.guest{
     background-color: #c4baba;
 }
 
@@ -215,6 +224,7 @@ guest{
 .mobile-img {
     display: none;
 }
+
 .content a {
     text-decoration: none;
     color: blue;
